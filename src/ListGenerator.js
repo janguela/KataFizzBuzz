@@ -3,7 +3,7 @@
 */ 
 
 function ListGenerator() {
-}
+};
 
 ListGenerator.prototype.generateList = function() {
 };
@@ -15,8 +15,11 @@ ListGenerator.prototype.generateNumber = function(number) {
   else if (number % 3 == 0) {
     return "Fizz"
   }
-  else {
+  else if (number % 5 == 0) {
     return "Buzz"
+  } 
+  else {
+    return "" + number;
   }
 };
 

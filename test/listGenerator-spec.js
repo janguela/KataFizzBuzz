@@ -32,4 +32,14 @@ describe("ListGenerator", function() {
     expect(listGenerator.generateNumber(60)).toEqual("FizzBuzz");
   });
 
+  it("returns the same number in any other case", function() {
+    expect(listGenerator.generateNumber(1)).toEqual("1");
+    expect(listGenerator.generateNumber(2)).toEqual("2");
+    expect(listGenerator.generateNumber(4)).toEqual("4");
+    expect(listGenerator.generateNumber(7)).toEqual("7");
+    expect(listGenerator.generateNumber(8)).toEqual("8");
+    expect(listGenerator.generateNumber(11)).toEqual("11");
+    expect(listGenerator.generateNumber(13)).toEqual("13");
+  });
+
 });
