@@ -9,7 +9,10 @@ ListGenerator.prototype.generateList = function() {
 };
 
 ListGenerator.prototype.generateNumber = function(number) {
-  if (number % 3 == 0) {
+  if (number % 15 == 0) {
+    return "FizzBuzz"
+  } 
+  else if (number % 3 == 0) {
     return "Fizz"
   }
   else {

@@ -25,4 +25,11 @@ describe("ListGenerator", function() {
     expect(listGenerator.generateNumber(25)).toEqual("Buzz");
   });
 
+  it("generates 'FizzBuzz' for numbers multiples of 3 and 5", function() {
+    expect(listGenerator.generateNumber(15)).toEqual("FizzBuzz");
+    expect(listGenerator.generateNumber(30)).toEqual("FizzBuzz");
+    expect(listGenerator.generateNumber(45)).toEqual("FizzBuzz");
+    expect(listGenerator.generateNumber(60)).toEqual("FizzBuzz");
+  });
+
 });
