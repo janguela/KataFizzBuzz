@@ -5,7 +5,7 @@
 function KataFizzBuzz(listGenerator, display) {
   this.listGenerator = listGenerator;
   this.display = display;
-}
+};
 
 KataFizzBuzz.prototype.execute = function() {
   var fizzBuzzList = this.listGenerator.generateList();
