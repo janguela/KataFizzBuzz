@@ -6,6 +6,11 @@ function ListGenerator() {
 };
 
 ListGenerator.prototype.generateList = function() {
+  var fizzBuzzList = [];
+  for (i = 1; i <= 100; i++) {
+    fizzBuzzList.push(this.generateNumber(i));
+  }
+  return fizzBuzzList;
 };
 
 ListGenerator.prototype.generateNumber = function(number) {

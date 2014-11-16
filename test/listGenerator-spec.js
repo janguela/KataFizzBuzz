@@ -5,11 +5,16 @@ var ListGenerator = require('../src/ListGenerator.js').ListGenerator;
 
 describe("ListGenerator", function() {
   var listGenerator;
+  var fizzBuzzList = [];
 
   beforeEach(function() {
     listGenerator = new ListGenerator();
-    listGenerator.generateList();
-  });  
+    fizzBuzzList = listGenerator.generateList();
+  });
+
+  it("generates a list of 100 numbers from 1 to 100", function() {
+    expect(fizzBuzzList.length).toEqual(100);
+  });
 
   it("generates 'Fizz' for numbers multiples of 3", function() {
     expect(listGenerator.generateNumber(3)).toEqual("Fizz");
