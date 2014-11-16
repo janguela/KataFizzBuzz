@@ -2,12 +2,14 @@
 * Author: Jordi Anguela, 2014
 */ 
 
-function KataFizzBuzz(listGenerator) {
+function KataFizzBuzz(listGenerator, display) {
   this.listGenerator = listGenerator;
+  this.display = display;
 }
 
 KataFizzBuzz.prototype.execute = function() {
-  this.listGenerator.generateList();
+  var fizzBuzzList = this.listGenerator.generateList();
+  this.display.show(fizzBuzzList);
 };
 
 module.exports.KataFizzBuzz = KataFizzBuzz;
